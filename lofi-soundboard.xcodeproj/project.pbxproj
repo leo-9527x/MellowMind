@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE8390A82A726CF8000341F2 /* lofi_soundboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8390A72A726CF8000341F2 /* lofi_soundboardApp.swift */; };
+		CE8390AA2A726CF8000341F2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8390A92A726CF8000341F2 /* Persistence.swift */; };
+		CE8390AD2A726CF8000341F2 /* lofi_soundboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8390AB2A726CF8000341F2 /* lofi_soundboard.xcdatamodeld */; };
+		CE8390AF2A726CF8000341F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8390AE2A726CF8000341F2 /* ContentView.swift */; };
+		CE8390B12A726CF9000341F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8390B02A726CF9000341F2 /* Assets.xcassets */; };
+		CE8390B52A726CF9000341F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8390B42A726CF9000341F2 /* Preview Assets.xcassets */; };
+		CE8390BF2A726CF9000341F2 /* lofi_soundboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8390BE2A726CF9000341F2 /* lofi_soundboardTests.swift */; };
+		CE8390C92A726CF9000341F2 /* lofi_soundboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8390C82A726CF9000341F2 /* lofi_soundboardUITests.swift */; };
+		CE8390CB2A726CF9000341F2 /* lofi_soundboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8390CA2A726CF9000341F2 /* lofi_soundboardUITestsLaunchTests.swift */; };
+		CE8390DA2A726F9B000341F2 /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE8390D92A726F9B000341F2 /* DancingScript-Regular.ttf */; };
+		CE8390DF2A72837A000341F2 /* SoundboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8390DE2A72837A000341F2 /* SoundboardView.swift */; };
+		CE8390E52A7284B2000341F2 /* jazz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8390E12A7284B2000341F2 /* jazz.mp3 */; };
+		CE8390E62A7284B2000341F2 /* chatter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8390E22A7284B2000341F2 /* chatter.mp3 */; };
+		CE8390E72A7284B2000341F2 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8390E32A7284B2000341F2 /* rain.mp3 */; };
+		CE8390E82A7284B2000341F2 /* fireplace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8390E42A7284B2000341F2 /* fireplace.mp3 */; };
+		F46393172A8BD21000617234 /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46393162A8BD21000617234 /* SoundButton.swift */; };
+		F46393192A8BD4F900617234 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46393182A8BD4F900617234 /* CircleProgressView.swift */; };
+		F463931B2A8BDC1000617234 /* TimeSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463931A2A8BDC1000617234 /* TimeSetterView.swift */; };
+		F463931F2A8D199700617234 /* GlobalTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463931E2A8D199700617234 /* GlobalTimerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE8390BB2A726CF9000341F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE83909C2A726CF8000341F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8390A32A726CF8000341F2;
+			remoteInfo = "lofi-soundboard";
+		};
+		CE8390C52A726CF9000341F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE83909C2A726CF8000341F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8390A32A726CF8000341F2;
+			remoteInfo = "lofi-soundboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE8390A42A726CF8000341F2 /* lofi-soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lofi-soundboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8390A72A726CF8000341F2 /* lofi_soundboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lofi_soundboardApp.swift; sourceTree = "<group>"; };
+		CE8390A92A726CF8000341F2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CE8390AC2A726CF8000341F2 /* lofi_soundboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lofi_soundboard.xcdatamodel; sourceTree = "<group>"; };
+		CE8390AE2A726CF8000341F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE8390B02A726CF9000341F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8390B22A726CF9000341F2 /* lofi_soundboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lofi_soundboard.entitlements; sourceTree = "<group>"; };
+		CE8390B42A726CF9000341F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE8390BA2A726CF9000341F2 /* lofi-soundboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lofi-soundboardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8390BE2A726CF9000341F2 /* lofi_soundboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lofi_soundboardTests.swift; sourceTree = "<group>"; };
+		CE8390C42A726CF9000341F2 /* lofi-soundboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lofi-soundboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8390C82A726CF9000341F2 /* lofi_soundboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lofi_soundboardUITests.swift; sourceTree = "<group>"; };
+		CE8390CA2A726CF9000341F2 /* lofi_soundboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lofi_soundboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE8390D92A726F9B000341F2 /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.ttf"; sourceTree = "<group>"; };
+		CE8390DB2A72707F000341F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE8390DE2A72837A000341F2 /* SoundboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardView.swift; sourceTree = "<group>"; };
+		CE8390E12A7284B2000341F2 /* jazz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jazz.mp3; sourceTree = "<group>"; };
+		CE8390E22A7284B2000341F2 /* chatter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chatter.mp3; sourceTree = "<group>"; };
+		CE8390E32A7284B2000341F2 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
+		CE8390E42A7284B2000341F2 /* fireplace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fireplace.mp3; sourceTree = "<group>"; };
+		F46393162A8BD21000617234 /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
+		F46393182A8BD4F900617234 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		F463931A2A8BDC1000617234 /* TimeSetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSetterView.swift; sourceTree = "<group>"; };
+		F463931E2A8D199700617234 /* GlobalTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTimerManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8390A12A726CF8000341F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8390B72A726CF9000341F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8390C12A726CF9000341F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE83909B2A726CF8000341F2 = {
+			isa = PBXGroup;
+			children = (
+				CE8390A62A726CF8000341F2 /* lofi-soundboard */,
+				CE8390BD2A726CF9000341F2 /* lofi-soundboardTests */,
+				CE8390C72A726CF9000341F2 /* lofi-soundboardUITests */,
+				CE8390A52A726CF8000341F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8390A52A726CF8000341F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8390A42A726CF8000341F2 /* lofi-soundboard.app */,
+				CE8390BA2A726CF9000341F2 /* lofi-soundboardTests.xctest */,
+				CE8390C42A726CF9000341F2 /* lofi-soundboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8390A62A726CF8000341F2 /* lofi-soundboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE8390DB2A72707F000341F2 /* Info.plist */,
+				CE8390E02A72849E000341F2 /* sounds */,
+				CE8390D92A726F9B000341F2 /* DancingScript-Regular.ttf */,
+				CE8390A72A726CF8000341F2 /* lofi_soundboardApp.swift */,
+				CE8390A92A726CF8000341F2 /* Persistence.swift */,
+				CE8390AE2A726CF8000341F2 /* ContentView.swift */,
+				F46393182A8BD4F900617234 /* CircleProgressView.swift */,
+				F463931A2A8BDC1000617234 /* TimeSetterView.swift */,
+				F46393162A8BD21000617234 /* SoundButton.swift */,
+				F463931E2A8D199700617234 /* GlobalTimerManager.swift */,
+				CE8390B02A726CF9000341F2 /* Assets.xcassets */,
+				CE8390B22A726CF9000341F2 /* lofi_soundboard.entitlements */,
+				CE8390AB2A726CF8000341F2 /* lofi_soundboard.xcdatamodeld */,
+				CE8390B32A726CF9000341F2 /* Preview Content */,
+				CE8390DE2A72837A000341F2 /* SoundboardView.swift */,
+			);
+			path = "lofi-soundboard";
+			sourceTree = "<group>";
+		};
+		CE8390B32A726CF9000341F2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE8390B42A726CF9000341F2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE8390BD2A726CF9000341F2 /* lofi-soundboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE8390BE2A726CF9000341F2 /* lofi_soundboardTests.swift */,
+			);
+			path = "lofi-soundboardTests";
+			sourceTree = "<group>";
+		};
+		CE8390C72A726CF9000341F2 /* lofi-soundboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE8390C82A726CF9000341F2 /* lofi_soundboardUITests.swift */,
+				CE8390CA2A726CF9000341F2 /* lofi_soundboardUITestsLaunchTests.swift */,
+			);
+			path = "lofi-soundboardUITests";
+			sourceTree = "<group>";
+		};
+		CE8390E02A72849E000341F2 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CE8390E22A7284B2000341F2 /* chatter.mp3 */,
+				CE8390E42A7284B2000341F2 /* fireplace.mp3 */,
+				CE8390E12A7284B2000341F2 /* jazz.mp3 */,
+				CE8390E32A7284B2000341F2 /* rain.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8390A32A726CF8000341F2 /* lofi-soundboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8390CE2A726CF9000341F2 /* Build configuration list for PBXNativeTarget "lofi-soundboard" */;
+			buildPhases = (
+				CE8390A02A726CF8000341F2 /* Sources */,
+				CE8390A12A726CF8000341F2 /* Frameworks */,
+				CE8390A22A726CF8000341F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lofi-soundboard";
+			productName = "lofi-soundboard";
+			productReference = CE8390A42A726CF8000341F2 /* lofi-soundboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE8390B92A726CF9000341F2 /* lofi-soundboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8390D12A726CF9000341F2 /* Build configuration list for PBXNativeTarget "lofi-soundboardTests" */;
+			buildPhases = (
+				CE8390B62A726CF9000341F2 /* Sources */,
+				CE8390B72A726CF9000341F2 /* Frameworks */,
+				CE8390B82A726CF9000341F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8390BC2A726CF9000341F2 /* PBXTargetDependency */,
+			);
+			name = "lofi-soundboardTests";
+			productName = "lofi-soundboardTests";
+			productReference = CE8390BA2A726CF9000341F2 /* lofi-soundboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE8390C32A726CF9000341F2 /* lofi-soundboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8390D42A726CF9000341F2 /* Build configuration list for PBXNativeTarget "lofi-soundboardUITests" */;
+			buildPhases = (
+				CE8390C02A726CF9000341F2 /* Sources */,
+				CE8390C12A726CF9000341F2 /* Frameworks */,
+				CE8390C22A726CF9000341F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8390C62A726CF9000341F2 /* PBXTargetDependency */,
+			);
+			name = "lofi-soundboardUITests";
+			productName = "lofi-soundboardUITests";
+			productReference = CE8390C42A726CF9000341F2 /* lofi-soundboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE83909C2A726CF8000341F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CE8390A32A726CF8000341F2 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					CE8390B92A726CF9000341F2 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = CE8390A32A726CF8000341F2;
+					};
+					CE8390C32A726CF9000341F2 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = CE8390A32A726CF8000341F2;
+					};
+				};
+			};
+			buildConfigurationList = CE83909F2A726CF8000341F2 /* Build configuration list for PBXProject "lofi-soundboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE83909B2A726CF8000341F2;
+			productRefGroup = CE8390A52A726CF8000341F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8390A32A726CF8000341F2 /* lofi-soundboard */,
+				CE8390B92A726CF9000341F2 /* lofi-soundboardTests */,
+				CE8390C32A726CF9000341F2 /* lofi-soundboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8390A22A726CF8000341F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8390B52A726CF9000341F2 /* Preview Assets.xcassets in Resources */,
+				CE8390E52A7284B2000341F2 /* jazz.mp3 in Resources */,
+				CE8390E72A7284B2000341F2 /* rain.mp3 in Resources */,
+				CE8390B12A726CF9000341F2 /* Assets.xcassets in Resources */,
+				CE8390E82A7284B2000341F2 /* fireplace.mp3 in Resources */,
+				CE8390E62A7284B2000341F2 /* chatter.mp3 in Resources */,
+				CE8390DA2A726F9B000341F2 /* DancingScript-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8390B82A726CF9000341F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8390C22A726CF9000341F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8390A02A726CF8000341F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F463931B2A8BDC1000617234 /* TimeSetterView.swift in Sources */,
+				F463931F2A8D199700617234 /* GlobalTimerManager.swift in Sources */,
+				CE8390AD2A726CF8000341F2 /* lofi_soundboard.xcdatamodeld in Sources */,
+				F46393172A8BD21000617234 /* SoundButton.swift in Sources */,
+				CE8390DF2A72837A000341F2 /* SoundboardView.swift in Sources */,
+				F46393192A8BD4F900617234 /* CircleProgressView.swift in Sources */,
+				CE8390A82A726CF8000341F2 /* lofi_soundboardApp.swift in Sources */,
+				CE8390AF2A726CF8000341F2 /* ContentView.swift in Sources */,
+				CE8390AA2A726CF8000341F2 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8390B62A726CF9000341F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8390BF2A726CF9000341F2 /* lofi_soundboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8390C02A726CF9000341F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8390C92A726CF9000341F2 /* lofi_soundboardUITests.swift in Sources */,
+				CE8390CB2A726CF9000341F2 /* lofi_soundboardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE8390BC2A726CF9000341F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8390A32A726CF8000341F2 /* lofi-soundboard */;
+			targetProxy = CE8390BB2A726CF9000341F2 /* PBXContainerItemProxy */;
+		};
+		CE8390C62A726CF9000341F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8390A32A726CF8000341F2 /* lofi-soundboard */;
+			targetProxy = CE8390C52A726CF9000341F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE8390CC2A726CF9000341F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE8390CD2A726CF9000341F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CE8390CF2A726CF9000341F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "lofi-soundboard/lofi_soundboard.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lofi-soundboard/Preview Content\"";
+				DEVELOPMENT_TEAM = TA8695RYBH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lofi-soundboard/Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wahid.lofi-soundboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE8390D02A726CF9000341F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "lofi-soundboard/lofi_soundboard.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lofi-soundboard/Preview Content\"";
+				DEVELOPMENT_TEAM = TA8695RYBH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lofi-soundboard/Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wahid.lofi-soundboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE8390D22A726CF9000341F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44C8ZXAZ8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wahid.lofi-soundboardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lofi-soundboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lofi-soundboard";
+			};
+			name = Debug;
+		};
+		CE8390D32A726CF9000341F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44C8ZXAZ8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wahid.lofi-soundboardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lofi-soundboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lofi-soundboard";
+			};
+			name = Release;
+		};
+		CE8390D52A726CF9000341F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44C8ZXAZ8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wahid.lofi-soundboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lofi-soundboard";
+			};
+			name = Debug;
+		};
+		CE8390D62A726CF9000341F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44C8ZXAZ8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wahid.lofi-soundboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lofi-soundboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE83909F2A726CF8000341F2 /* Build configuration list for PBXProject "lofi-soundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8390CC2A726CF9000341F2 /* Debug */,
+				CE8390CD2A726CF9000341F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8390CE2A726CF9000341F2 /* Build configuration list for PBXNativeTarget "lofi-soundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8390CF2A726CF9000341F2 /* Debug */,
+				CE8390D02A726CF9000341F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8390D12A726CF9000341F2 /* Build configuration list for PBXNativeTarget "lofi-soundboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8390D22A726CF9000341F2 /* Debug */,
+				CE8390D32A726CF9000341F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8390D42A726CF9000341F2 /* Build configuration list for PBXNativeTarget "lofi-soundboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8390D52A726CF9000341F2 /* Debug */,
+				CE8390D62A726CF9000341F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE8390AB2A726CF8000341F2 /* lofi_soundboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE8390AC2A726CF8000341F2 /* lofi_soundboard.xcdatamodel */,
+			);
+			currentVersion = CE8390AC2A726CF8000341F2 /* lofi_soundboard.xcdatamodel */;
+			path = lofi_soundboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE83909C2A726CF8000341F2 /* Project object */;
+}
