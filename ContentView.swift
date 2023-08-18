@@ -11,7 +11,7 @@ struct ContentView: View {
             SoundboardView(focusTime: $focusTime, breakTime: $breakTime, showSoundboard: $showSoundboard, timerManager: timerManager)
         } else {
             ZStack {
-                Color("lofi-orange") // Orange background
+                LinearGradient(gradient: Gradient(colors: [Color.red.opacity(0.6), Color.purple.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     Text("Mellow Mind")

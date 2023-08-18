@@ -14,7 +14,7 @@ struct TimeSetterView: View {
         HStack {
             Picker("Hours", selection: $hours) {
                 ForEach(0...maxHours, id: \.self) {
-                    Text("\($0)h")
+                    Text("\($0)h").foregroundColor(.white)
                 }
             }
             .labelsHidden()
@@ -23,7 +23,7 @@ struct TimeSetterView: View {
 
             Picker("Minutes", selection: $minutes) {
                 ForEach(0...maxMinutesAndSeconds, id: \.self) {
-                    Text("\($0)m")
+                    Text("\($0)m").foregroundColor(.white)
                 }
             }
             .labelsHidden()
@@ -32,7 +32,7 @@ struct TimeSetterView: View {
 
             Picker("Seconds", selection: $seconds) {
                 ForEach(0...maxMinutesAndSeconds, id: \.self) {
-                    Text("\($0)s")
+                    Text("\($0)s").foregroundColor(.white)
                 }
             }
             .labelsHidden()

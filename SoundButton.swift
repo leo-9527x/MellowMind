@@ -31,14 +31,15 @@ struct SoundButton: View {
             Button(action: {
                 toggleSound()
             }) {
-                Text(isPlaying ? "Pause" : "Play")
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(isPlaying ? Color.red : Color.green)
-                    .cornerRadius(10)
+                Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill") // Changed to use system icons
+                    .resizable()
+                    .foregroundColor(.white) // Set the color to white
+                    .frame(width: 40, height: 40) // Adjust size as necessary
             }
             Slider(value: $volumeLevel, in: 0...1)
                 .padding(.horizontal)
+                .accentColor(.white)
+                .frame(width: 200)
         }
         .onChange(of: volumeLevel) { newValue in
             audioPlayerManager.player?.volume = Float(newValue)
@@ -82,80 +83,3 @@ struct SoundButton: View {
     }
 
 }
-
-
-
-
-//import SwiftUI
-//import AVKit
-//
-//
-//class AudioPlayerManager: ObservableObject {
-//    var player: AVPlayer?
-//
-//    init(soundURL: URL) {
-//        let playerItem = AVPlayerItem(url: soundURL)
-//        player = AVPlayer(playerItem: playerItem)
-//    }
-//}
-//
-//struct SoundButton: View {
-//    let soundURL: URL
-//    let label: String
-//    @ObservedObject var timerManager: GlobalTimerManager
-//
-//    @StateObject private var audioPlayerManager: AudioPlayerManager
-//    @State private var isPlaying = false
-//    @State private var volumeLevel: Double = 0.5
-//
-//    init(soundURL: URL, label: String, timerManager: GlobalTimerManager) {
-//        self.soundURL = soundURL
-//        self.label = label
-//        self.timerManager = timerManager
-//        _audioPlayerManager = StateObject(wrappedValue: AudioPlayerManager(soundURL: soundURL))
-//    }
-//
-//    var body: some View {
-//        VStack {
-//            Button(action: {
-//                toggleSound()
-//            }) {
-//                Text(isPlaying ? "Pause" : "Play")
-//                    .padding()
-//                    .foregroundColor(.white)
-//                    .background(isPlaying ? Color.red : Color.green)
-//                    .cornerRadius(10)
-//            }
-//            Slider(value: $volumeLevel, in: 0...1)
-//                .padding(.horizontal)
-//        }
-//        .onChange(of: volumeLevel) { newValue in
-//            audioPlayerManager.player?.volume = Float(newValue)
-//        }
-//        .onChange(of: timerManager.isPlaying) { _ in
-//            if timerManager.isBreakTime {
-//                pauseSound()
-//            } else if timerManager.wasMusicPlayingBeforeBreak && isPlaying {
-//                playSound()
-//            }
-//        }
-//    }
-//
-//    private func toggleSound() {
-//        if isPlaying {
-//            pauseSound()
-//        } else {
-//            playSound()
-//        }
-//    }
-//
-//    private func playSound() {
-//        audioPlayerManager.player?.play()
-//        isPlaying = true
-//    }
-//
-//    private func pauseSound() {
-//        audioPlayerManager.player?.pause()
-//        isPlaying = false
-//    }
-//}

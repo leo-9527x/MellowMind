@@ -9,6 +9,7 @@ class GlobalTimerManager: ObservableObject {
     @Published var isBreakTime = false
     @Published var wasMusicPlayingBeforeBreak = false
     @Published var currentlyPlayingSound: URL?
+    @Published var wasMusicPlayingBeforeClosingSheet = false
     
     var focusTime: TimeInterval = 0
     var breakTime: TimeInterval = 0
@@ -62,6 +63,7 @@ class GlobalTimerManager: ObservableObject {
         timer?.cancel()
     }
 }
+
 
 
 

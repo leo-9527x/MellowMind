@@ -4,22 +4,22 @@ struct SoundboardView: View {
     @Binding var focusTime: TimeInterval
     @Binding var breakTime: TimeInterval
     @Binding var showSoundboard: Bool
+    @State private var isSheetShown: Bool = false
     @ObservedObject var timerManager: GlobalTimerManager
 
     let soundData = [
-        (soundURL: Bundle.main.url(forResource: "jazz", withExtension: "mp3")!, label: "Sound 1"),
-        (soundURL: Bundle.main.url(forResource: "rain", withExtension: "mp3")!, label: "Sound 2"),
-        (soundURL: Bundle.main.url(forResource: "chatter", withExtension: "mp3")!, label: "Sound 3"),
-        (soundURL: Bundle.main.url(forResource: "fireplace", withExtension: "mp3")!, label: "Sound 4")
+        (soundURL: Bundle.main.url(forResource: "Next-door-music", withExtension: "mp3")!, label: "Sound 1"),
+        (soundURL: Bundle.main.url(forResource: "Jazz-music", withExtension: "mp3")!, label: "Sound 2"),
+        (soundURL: Bundle.main.url(forResource: "Crescent-Moon-music", withExtension: "mp3")!, label: "Sound 3")
     ]
     
     var maxValue: TimeInterval {
         return timerManager.isBreakTime ? breakTime : focusTime
     }
-
+    
     var body: some View {
         ZStack {
-            Color("lofi-orange")
+            LinearGradient(gradient: Gradient(colors: [Color.red.opacity(0.6), Color.purple.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("Mellow Mind")
@@ -31,11 +31,21 @@ struct SoundboardView: View {
                     .padding()
 
                 ScrollView {
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: 20)], spacing: 20) {
-                        ForEach(soundData, id: \.label) { sound in
-                            SoundButton(soundURL: sound.soundURL, label: sound.label, timerManager: timerManager)
-                        }
+                    VStack(spacing: 20) {
+                        Text("Next-door-music")
+                            .italic()
+                            .foregroundColor(.white)
+                        SoundButton(soundURL: soundData[0].soundURL, label: soundData[0].label, timerManager: timerManager)
 
+                        Text("Jazz-music")
+                            .italic()
+                            .foregroundColor(.white)
+                        SoundButton(soundURL: soundData[1].soundURL, label: soundData[1].label, timerManager: timerManager)
+
+                        Text("Crescent-Moon-music")
+                            .italic()
+                            .foregroundColor(.white)
+                        SoundButton(soundURL: soundData[2].soundURL, label: soundData[2].label, timerManager: timerManager)
                     }
                     .padding()
                 }
@@ -51,12 +61,36 @@ struct SoundboardView: View {
                 }
                 .padding()
             }
+        
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        self.isSheetShown.toggle()
+                    }) {
+                        Image(systemName: "arrow.up.circle")
+                            .resizable()
+                            .foregroundColor(Color(.white))
+                            .frame(width: 40, height: 40)
+                    }
+                    .sheet(isPresented: $isSheetShown) {
+                        // This is where the MusicSheetView is presented as a sheet
+                        MusicSheetView(timerManager: timerManager)
+                    }
+                    .padding()
+                }
+            }
         }
         .onAppear {
             timerManager.startTimer(focusTime: self.focusTime, breakTime: self.breakTime)
         }
         .onDisappear {
             timerManager.pause()
+        }
+        // Here's the sheet modifier that displays the MusicSheetView when isSheetShown is true.
+        .sheet(isPresented: $isSheetShown) {
+            MusicSheetView(timerManager: timerManager)
         }
     }
 }
